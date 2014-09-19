@@ -36,3 +36,23 @@ cacheSolve <- function(x, ...) {
     x$setinv(xinverse)
     xinverse
 }
+
+## Sample output from the script:
+## > myM <- matrix(c(4, 2, 7, 6), 2, 2)
+## > myM
+##   [,1] [,2]
+##   [1,]    4    7
+##   [2,]    2    6
+## > cm <- makeCacheMatrix(myM)
+## > cacheSolve(cm)
+## Inverse of the matrix: 
+##      [,1] [,2]
+## [1,]  0.6 -0.7
+## [2,] -0.2  0.4
+## > cacheSolve(cm)
+## Inverse from cached variable: 
+
+##      [,1] [,2]
+## [1,]  0.6 -0.7
+## [2,] -0.2  0.4
+> 
